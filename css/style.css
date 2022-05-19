@@ -42,4 +42,7 @@ body{
         letter-spacing: .75rem;
         text-shadow: 2px 2px rgb(248, 209, 219);
 	}
-	
+	img:hover{
+		height: 30rem;
+		width: 20rem;
+	}
