@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User - Profile of Benjie Cervantes</title>
+    <title>User - Profile - All about Me</title>
+    <link rel="icon" type="image/x-icon" href="/image/pic.jpg">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="js/bootstrap.bundle.min.js">
     <link rel="icon" type="image/x-icon" href="/image/pic.jpg">
     <script src="https://kit.fontawesome.com/a7343e54cd.js" crossorigin="anonymous"></script>
 </head>
     <style>
          body{
            
-            background: antiquewhite url(image/benjie.png)  no-repeat right bottom fixed;
+            background: url(image/benjie.png)  no-repeat right bottom fixed;
         }
         header{
             border: 1px dashed black;
@@ -32,13 +36,37 @@
             letter-spacing: .75rem;
             text-shadow: 2px 2px rgb(248, 209, 219);
         }
+        .card{
+            height: 14rem;
+            width: auto;
+            margin-left: 0rem;
+            padding-left: 0rem;
+            z-index: -1;
+            /* margin: 0rem;
+            padding: 0rem; */
+        }
+        .card-img{
+            height: 18.5rem;
+            margin-left: 0rem ;
+            
+        }
         img{
             border-radius: 100%;
             width: 13rem;
             height: 12rem;
+            border-color: aliceblue;
+            margin-top: -4.5rem;
+            margin-left: 1rem;
+            
+            
+        }
+        h2{
+            margin-top: -9rem;
+            margin-left: 15rem;
         }
         h3{
-            text-indent: 14rem;
+            margin-top: 0rem;
+            text-indent: 15rem;
         }
         section{
             margin-top: 5rem;
@@ -52,7 +80,7 @@
             
         }
         article{
-            margin-top: -19.15rem;
+            margin-top: -18.45rem;
             margin-left: 30rem;
             margin-right: 30rem;
         }
@@ -60,22 +88,81 @@
             margin-top: -1.8rem;
             margin-left: 2.5rem;
         }
+       
     </style>
 <body>
-<header>
-    <h1>USER INFORMATION</h1>
-</header>
-<br><br>
-<a href="https://www.facebook.com/photo/?fbid=3048271848823986&set=a.1380114132306441">
-    <img src="image/pic.jpg" class="img-fluid" alt="">
-</a>   
-<h2>BENJIE</span> CERVANTES<span></h2>
-<h3>
-    Baby, baby, you're my sun and moon
-    Girl, you're everything between
-    A lot of pretty faces could waste my time
-    But you're my dream girl
-</h3>
+<!-- start of header    -->
+<div class="container-fluid mx-0 px-0  fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <a class="navbar-brand" href="index.html">IPT</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form> -->
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"> | <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+                <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+              </svg>  HOME |<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link acttive" href="user.html"> |
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                     <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                  </svg> PROFILE | 
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="favorite.html"> |
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                  </svg>  FAVORITES |
+              </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="family.html"> |
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+                        <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
+                      </svg> FAMILY |
+                </a>
+              </li>
+            
+           
+          </ul>
+         
+        </div>
+      </nav>
+</div>
+<br><br><br>
+<!-- end of header    --> 
+<!-- <br><br> -->
+<div class="container-fluid">
+    <div class="card bg-dark text-white">
+        <img src="image/cover.jpg" class="card-img" alt="...">
+        <div class="card-img-overlay">
+          <h5 class="card-title">Welcome!</h5>
+          <p class="card-text">Baby, baby, you're my sun and moon
+            Girl, you're everything between
+            A lot of pretty faces could waste my time
+            But you're my dream girl.</p>
+          <!-- <p class="card-text">Last updated 3 mins ago</p> -->
+        </div>
+    </div>    
+    <a href="https://www.facebook.com/photo/?fbid=3048271848823986&set=a.1380114132306441">
+        <img src="image/pic.jpg" class="img-fluid" alt="">
+    </a>   
+    <h2>BENJIE</span> CERVANTES<span></h2>
+    <h3>
+        Professional Dishwasher
+    </h3>
+</div>
+
+
 <section>
     <h4>PLACE OF BIRTH</h4>
     <h4>CIVIL STATUS</h4>
@@ -91,7 +178,7 @@
     <h4>5'8"</h4>
 </article>
 <br><br>
-<a href="index.html">
+<!-- <a href="index.html">
     <span class="fa-stack" style="vertical-align: top;">
         <i class="fa-regular fa-square fa-stack-2x"></i>
         <i class="fa-solid fa-home fa-stack-1x "></i>
@@ -107,6 +194,6 @@
     You just might get it all and then some you don't want
     Be careful what you wish for 'cause you just might get it all
     You just might get it all, yeah
-</footer>  
+</footer>   -->
 </body>
 </html>
