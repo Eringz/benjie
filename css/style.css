@@ -1,0 +1,44 @@
+
+body{
+        background: antiquewhite url(/image/benjie.png)  no-repeat right bottom fixed;
+    }
+	ul{
+		word-spacing: 2rem;
+		letter-spacing: .5rem;
+		
+	}
+	li:hover{
+		background-color: rgb(235, 240, 245);
+		border-radius: 5%;
+	}
+   .card-body img{
+		border-radius: 50%;
+		height: 3rem;
+		width: auto;
+   }
+   .blockquote-head {
+	   margin-top: -2rem;
+	   margin-left: 4rem;
+   }
+
+    #more, #more1, #more2, #more3 {
+		display: none;
+	}
+	
+	#tatay , #nanay, #bong, #vin{
+		background-color: transparent;
+		border: none;
+		color: blue;
+	}
+	.card-img-top{
+		height: 25rem;
+	}
+	.card-title{
+		/* margin-top: -10rem;
+        margin-left: 14rem; */
+        font-size: 25px;
+        font-family: fantasy;
+        color: rgb(10, 10, 10);
+        letter-spacing: .75rem;
+        text-shadow: 2px 2px rgb(248, 209, 219);
+	}
